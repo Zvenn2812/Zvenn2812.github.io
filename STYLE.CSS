@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameboy {
+    margin-top: -55vmin;
+    margin-left: -35vmin;
+    background: transparent;
+    font-size: 2vmin;
+    height: 1em;
+    width: 1em;
+
+    /*shadow*/
+}
+
+.gameboy::after {
+    content: "";
+    position: absolute;
+    background: transparent;
+    height: 1em;
+    width: 1em;
+    color: transparent;
+    box-shadow:
+        6em -4em,
+        6em -3em,
+        6em -2em,
+        /*tangga datar love*/
+        6em -1em,
+        8em -1em, 9em -1em, 10em -1em, 4em -1em, 3em -1em, 2em -1em,
+        /*tangga love*/
+        6em 0em,
+        7em 0em, 5em 0em, 11em 0em, 1em 0em,
+        /*awal*/
+        6em 1em,
+        12em 1em, 0em 1em;
+    animation: turn-on 2.5s infinite;
+}
+
+@keyframes turn-on {
+    10% {
+        box-shadow:
+            6em -4em,
+            6em -3em,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em, 9em -1em, 10em -1em, 4em -1em, 3em -1em, 2em -1em,
+            /*tangga love*/
+            6em 0em,
+            7em 0em, 5em 0em, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em,
+            12em 1em, 0em 1em;
+    }
+
+    15% {
+        box-shadow:
+            6em -4em black,
+            6em -3em black,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em, 4em -1em,
+            /*tangga love*/
+            6em 0em,
+            7em 0em, 5em 0em, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em,
+            12em 1em, 0em 1em;
+    }
+
+    20% {
+        box-shadow:
+            6em -4em black,
+            6em -3em black,
+            6em -2em black,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em, 9em -1em, 10em -1em, 4em -1em, 3em -1em, 2em -1em,
+            /*tangga love*/
+            6em 0em,
+            7em 0em, 5em 0em, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em,
+            12em 1em, 0em 1em;
+    }
+
+    25% {
+        box-shadow:
+            6em -4em black,
+            6em -3em black,
+            6em -2em black,
+            /*tangga datar love*/
+            6em -1em black,
+            8em -1em, 9em -1em, 10em -1em, 4em -1em, 3em -1em, 2em -1em,
+            /*tangga love*/
+            6em 0em,
+            7em 0em, 5em 0em, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em,
+            12em 1em, 0em 1em;
+    }
+
+    30% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em black,
+            6em -2em black,
+            /*tangga datar love*/
+            6em -1em black,
+            8em -1em, 9em -1em, 10em -1em, 4em -1em, 3em -1em, 2em -1em,
+            /*tangga love*/
+            6em 0em black,
+            7em 0em, 5em 0em, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em,
+            12em 1em, 0em 1em;
+    }
+
+    35% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em,
+            6em -2em black,
+            /*tangga datar love*/
+            6em -1em black,
+            8em -1em, 9em -1em, 10em -1em, 4em -1em, 3em -1em, 2em -1em,
+            /*tangga love*/
+            6em 0em black,
+            7em 0em, 5em 0em, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em black,
+            12em 1em, 0em 1em;
+    }
+
+    40% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em black,
+            8em -1em, 9em -1em, 10em -1em, 4em -1em, 3em -1em, 2em -1em,
+            /*tangga love*/
+            6em 0em black,
+            7em 0em black, 5em 0em black, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em black,
+            12em 1em, 0em 1em;
+    }
+
+    45% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em black, 9em -1em, 10em -1em, 4em -1em black, 3em -1em, 2em -1em,
+            /*tangga love*/
+            6em 0em black,
+            7em 0em black, 5em 0em black, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em black,
+            12em 1em, 0em 1em;
+    }
+
+    50% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em black, 9em -1em black, 10em -1em, 4em -1em black, 3em -1em black, 2em -1em,
+            /*tangga love*/
+            6em 0em,
+            7em 0em black, 5em 0em black, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em black,
+            12em 1em, 0em 1em;
+    }
+
+    60% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em black, 9em -1em black, 10em -1em black, 4em -1em black, 3em -1em black, 2em -1em black,
+            /*tangga love*/
+            6em 0em,
+            7em 0em black, 5em 0em black, 11em 0em, 1em 0em,
+            /*awal*/
+            6em 1em black,
+            12em 1em, 0em 1em;
+    }
+
+    65% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em black, 9em -1em black, 10em -1em black, 4em -1em black, 3em -1em black, 2em -1em black,
+            /*tangga love*/
+            6em 0em,
+            7em 0em black, 5em 0em black, 11em 0em black, 1em 0em black,
+            /*awal*/
+            6em 1em black,
+            12em 1em, 0em 1em;
+    }
+
+    70% {
+        box-shadow:
+            /*kotak awal*/
+            6em -4em,
+            6em -3em,
+            6em -2em,
+            /*tangga datar love*/
+            6em -1em,
+            8em -1em black, 9em -1em black, 10em -1em black, 4em -1em black, 3em -1em black, 2em -1em black,
+            /*tangga love*/
+            6em 0em,
+            7em 0em black, 5em 0em black, 11em 0em black, 1em 0em black,
+            /*awal*/
+            6em 1em black,
+            12em 1em black, 0em 1em black;
+    }
+}
